@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="staticStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="resumeDiv">
+      <header class="white">
+        <div>
+          <h1><span id="resName"></span></h1>
+          <h2><span id="resTitle"></span></h2>
+        </div>
+        <img id="resImg" src="profile.jpeg" alt="Profile Picture" />
+      </header>
+      <div class="content">
+        <aside>
+          <section class="contact">
+            <h2>Contact</h2>
+            <p>
+              <strong> Phone </strong>
+            </p>
+            <p><span id="resPhone"></span></p>
+            <br>
+            <p>
+              <strong> Email </strong>
+            </p>
+            <p><span id="resEmail"></span></p>
+            <br>
+            <p>
+              <strong> Address </strong>
+            </p>
+            <p><span id="resAdd"></span></p>
+            <br>
+          </section>
+          <section class="education">
+            <h2>Education</h2>
+            <p><span id="resPassYear"></span></p>
+            <p><strong><span id="resEduSubject"></span></strong></p>
+            <p><span id="resEduInstitute"></span></p>
+            <br>
+            <p><span id="resPassYear1"></span></p>
+            <p><strong><span id="resEduSubject1"></span></strong></p>
+            <p><span id="resEduInstitute1"></span></p>
+          </section>
+
+          <section class="skill">
+            <h2>Expertise</h2>
+                <ul>
+                    <li><span id="resSkill1"></span></li>
+                    <li><span id="resSkill2"></span></li>
+                    <li><span id="resSkill3"></span></li>
+                    <li><span id="resSkill4"></span></li>
+                    <li><span id="resSkill5"></span></li>
+                </ul>
+            </section>
+            <section class="language">
+                <h2>Language</h2>
+                <p><span id="resLang1"></span></p>
+                <p><span id="resLang2"></span></p>
+                </section>
+        </aside>
+        <main class="main-content">
+            <section id="experience" class="experience">
+                <h2>Experience</h2>
+                <div class="experience-items">
+                <p><span id="resStartExpYear"></span> - <span id="resEndExpYear"></span></p>
+                <p><strong><span id="resExpCompany"></span> | <span id="resExpCompanyLocation"></span></strong></p>
+                <p><span id="resExpRole"></span></p>
+                <ul>
+                    <li><span id="resAchv1"></span></li>
+                    <li><span id="resAchv2"></span></li>
+                    <li><span id="resAchv3"></span></li>
+                </ul>
+            </div>
+                <div class="experience-items">
+                  <p><span id="resStartExpYear3"></span> - <span id="resEndExpYear3"></span></p>
+                  <p><strong><span id="resExpCompany3"></span> | <span id="resExpCompanyLocation3"></span></strong></p>
+                  <p><span id="resExpRole3"></span></p>
+                  <ul>
+                      <li><span id="resAchv7"></span></li>
+                      <li><span id="resAchv8"></span></li>
+                      <li><span id="resAchv9"></span></li>
+                  </ul>
+            </div>
+            </section>
+            <section>
+              <section id="interest" class="interest">
+                <h2>Interest</h2>
+                <ul>
+                  <li><span id="resInterest1"></span></li>
+                  <li><span id="resInterest2"></span></li>
+                  <li><span id="resInterest3"></span></li>
+                  <li><span id="resInterest4"></span></li>
+                  <li><span id="resInterest5"></span></li>
+              </ul>
+            </section>
+        </main>
+      </div>
+    </div>
+    <div class="btnDiv">
+      <button id="print_btn" class="btn">Print</button>
+      <button id="edit_btn" class="btn">Edit</button>
+      <a id="anc" href=""><button id="share_btn" class="btn">Shareable Link</button></a>
+      <button id="copy_btn" class="btn">Copy Link Address</button>
+    </div>
+  </body>
+  <script src="staticResume.js"></script>
+</html>

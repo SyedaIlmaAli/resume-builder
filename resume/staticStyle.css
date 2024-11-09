@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background: #f9f9f9;
+    flex-direction: column;
+  }
+  
+  .resumeDiv {
+    width: 70%;
+    border: 2px solid black;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  header {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 30px;
+    background: linear-gradient(rgba(41,168,218,0.63), rgba(31,141,214,0.562));
+  }
+
+  .white{
+    color: white;
+  }
+
+  .content{
+    width: 100%;
+    display: flex;
+  }
+
+  .content aside{
+    width: 30%;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    background-color: #f9f9f9;
+  }
+
+  .contact h2,
+  .education h2,
+  .skill h2,
+  .language h2,
+  .experience h2,
+  .interest h2{
+    border-bottom: 2px solid #00BFFF;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    color: #00BFFF
+  }
+
+  .contact,
+  .education,
+  .skill,
+  .language,
+  .reference{
+    margin-bottom: 30px;
+  }
+
+  .education{
+    line-height: 20px;
+  }
+
+  .skill ul {
+    margin-left: 18px;
+  }
+
+  .main-content{
+    padding-left: 50px;
+    width: 70%;
+    background-color: #f9f9f9;
+  }
+
+  .experience{
+    background-color: #f9f9f9;
+  }
+
+  .experience-items{
+    margin-bottom: 54px;
+  }
+
+  .experience-items p {
+    margin-bottom: 5px;
+  }
+
+  .experience-items ul{
+    margin-left: 18px;
+    margin-top: 15px;
+  }
+
+  .interest ul{
+    margin-left: 18px;
+    margin-top: 15px;
+  }
+
+  .btnDiv {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+    margin-top: 30px;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .btn{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: white;
+    background-color: #00BFFF;
+    cursor: pointer;
+
+
+    &:hover{
+      background: #007B9E;
+    }
+
+    &:active{
+      transform: scale(0.95);
+    }
+  }
+
+  @media print {
+    .btnDiv{
+      display: none;
+    }
+  }
+
+  @media (max-width: 786px) {
+    .content{
+      flex-direction: column;
+    }
+
+    aside, .main-content {
+      width: 100%;
+    }
+
+    .resumeDiv{
+      width: 90%;
+    }
+
+    .btnDiv{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .btn{
+      margin-top: 30px;
+    }
+
+    .resumeDiv{
+      padding-bottom: 30px;
+    }
+  }
+  
+  /* .personal h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .personal h2 {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .contact-info .para {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .heading {
+    font-size: 24px;
+    color: #444;
+    padding: 10px;
+    background-color: #ececec;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .contPara {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  #skillSec ul {
+    margin-left: 25px;
+  }
+  
+  #btnDiv {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    background-color: lightseagreen;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .sp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+   Responsive Design 
+  @media (max-width: 768px) {
+    #mainDiv, #btnDiv {
+      width: 100%;
+    }
+  
+    .personal {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    img {
+      margin-top: 20px;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  #objectiveSec{
+    display: block;
+  }
+  
+  #eduSec{
+    display: block;
+  }
+  
+  #skillSec{
+    display: block;
+  }
+  
+  #workExpSec{
+    display: block;
+  } */

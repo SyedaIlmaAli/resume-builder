@@ -1,0 +1,120 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #ffffff; /* White background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  h1 {
+    color: #6200ea; /* Neon purple for title */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px rgba(98, 0, 234, 0.6);
+  }
+  
+  form {
+    background-color: #f9f9f9;
+    width: 90%;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.5), /* Neon blue shadow */
+              0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid #00b4d8;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    color: #00b4d8; /* Neon blue for section headers */
+    text-align: left;
+    width: 100%;
+    margin-top: 50px;
+    border-bottom: 2px solid #90e0ef; /* Lighter neon blue underline */
+    padding-bottom: 5px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  /* Education section styling */
+  .education-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .education-group .form-group {
+    flex: 1 1 48%;
+    min-width: 220px;
+  }
+  
+  .label {
+    color: #6200ea; /* Neon purple for labels */
+    font-weight: bold;
+  }
+  
+  .input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #00b4d8; /* Neon blue border */
+    color: #333333;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #00b4d8;
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.5); /* Neon glow effect */
+  }
+  
+  .btnDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .submit {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #6200ea; /* Neon purple for submit button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.6);
+  }
+  
+  .submit:hover {
+    background-color: #00b4d8; /* Switch to neon blue on hover */
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.6); /* Blue neon glow */
+  }
+  
